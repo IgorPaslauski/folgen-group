@@ -1,0 +1,38 @@
+{
+    "pt-BR": {
+        "descricao": {
+            "title": "Descrição",
+            "text": "Fundada em 2008, a GrainTech Solutions nasceu do sonho de transformar o setor agrícola brasileiro através de soluções de engenharia de alta performance. Começamos como uma pequena consultoria e hoje somos referência nacional em projetos de armazenagem e logística de grãos. Nossa equipe multidisciplinar de engenheiros, técnicos e especialistas trabalha incansavelmente para desenvolver projetos que aliam tecnologia, sustentabilidade e eficiência, garantindo o melhor custo-benefício para nossos clientes."
+        },
+        "missao": {
+            "title": "Missão",
+            "text": "Fomentar estratégias que gerem evolução para os negócios de forma eficiente e sustentável."
+        },
+        "visao": {
+            "title": "Visão",
+            "text": "Consolidar a empresa de forma sólida no mercado nacional e internacional na promoção de soluções corporativas inteligentes."
+        },
+        "valores": {
+            "title": "Valores",
+            "text": "Transparência Eficiência Comprometimento Honestidade Excelência Segurança Sustentabilidade"
+        }
+    },
+    "en-US": {
+        "descricao": {
+            "title": "Description",
+            "text": "Founded in 2008, GrainTech Solutions was born from the dream of transforming the Brazilian agricultural sector through high-performance engineering solutions. We started as a small consultancy and today we are a national reference in grain storage and logistics projects. Our multidisciplinary team of engineers, technicians and specialists works tirelessly to develop projects that combine technology, sustainability and efficiency, ensuring the best cost-benefit for our clients."
+        },
+        "missao": {
+            "title": "Mission",
+            "text": "Foster strategies to generate evolution for business in an efficient and sustainable way."
+        },
+        "visao": {
+            "title": "Vision",
+            "text": "Establish the company solidly in the national and international market in fostering intelligent corporate solutions."
+        },
+        "valores": {
+            "title": "Values",
+            "text": "Transparency Efficiency Commitment Honesty Excellence Safety Sustainability"
+        }
+    }
+}

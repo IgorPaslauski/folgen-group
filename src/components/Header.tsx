@@ -1,8 +1,16 @@
-
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
+import { ButtonToggleLanguage } from "./LanguageToggle";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,9 +38,7 @@ const Header = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white shadow-md py-2"
-          : "bg-transparent py-4"
+        isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -62,7 +68,31 @@ const Header = () => {
               href="#servicos"
               className="text-gray-800 hover:text-folgen-primary font-semibold transition-colors"
             >
-              Serviços
+              <DropdownMenu>
+                <DropdownMenuTrigger>Serviços</DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuLabel>Serviços</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem>Verificação da produção</DropdownMenuItem>
+                  <DropdownMenuItem>
+                    Verificação do sistema de industrialização
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    Análise da Estimativa de Custos de investimento do Projeto
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    Verificação dos Indicadores Financeiros
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>Análise dos Fornecedores</DropdownMenuItem>
+                  <DropdownMenuItem>
+                    Análise do desenvolvimento dos projetos iniciais
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    Análise das Estruturas existentes quanto aos benefícios de
+                    engenharia Profile
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </a>
             <a
               href="#projetos"
@@ -78,10 +108,15 @@ const Header = () => {
             </a>
             <Button
               className="bg-folgen-primary hover:bg-folgen-secondary text-white"
-              onClick={() => document.getElementById("orcamento")?.scrollIntoView({behavior: "smooth"})}
+              onClick={() =>
+                document
+                  .getElementById("orcamento")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               Solicitar Orçamento
             </Button>
+            <ButtonToggleLanguage />
           </nav>
 
           {/* Mobile Menu Button */}
@@ -89,11 +124,7 @@ const Header = () => {
             className="md:hidden text-gray-800 focus:outline-none"
             onClick={toggleMobileMenu}
           >
-            {isMobileMenuOpen ? (
-              <X size={24} />
-            ) : (
-              <Menu size={24} />
-            )}
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
@@ -139,7 +170,9 @@ const Header = () => {
               <Button
                 className="bg-folgen-primary hover:bg-folgen-secondary text-white"
                 onClick={() => {
-                  document.getElementById("orcamento")?.scrollIntoView({behavior: "smooth"});
+                  document
+                    .getElementById("orcamento")
+                    ?.scrollIntoView({ behavior: "smooth" });
                   toggleMobileMenu();
                 }}
               >

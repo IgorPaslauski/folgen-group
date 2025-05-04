@@ -1,0 +1,98 @@
+{
+    "pt-BR": [
+        {
+            "name": "Início",
+            "path": "/"
+        },
+        {
+            "name": "Sobre",
+            "path": "/sobre"
+        },
+        {
+            "name": "Serviços",
+            "path": "",
+            "children": [
+                {
+                    "name": "Verificação da produção",
+                    "path": "/servicos/servico1"
+                },
+                {
+                    "name": "Verificação do sistema de industrialização",
+                    "path": "/servicos/servico2"
+                },
+                {
+                    "name": "Análise da Estimativa de Custos de investimento do Projeto",
+                    "path": "/servicos/servico3"
+                },
+                {
+                    "name": "Verificação dos Indicadores Financeiros",
+                    "path": "/servicos/servico4"
+                },
+                {
+                    "name": "Análise dos Fornecedores",
+                    "path": "/servicos/servico5"
+                },
+                {
+                    "name": "Análise do desenvolvimento dos projetos iniciais",
+                    "path": "/servicos/servico6"
+                },
+                {
+                    "name": "Análise das Estruturas existentes quanto aos benefícios de engenharia Profile",
+                    "path": "/servicos/servico7"
+                }
+            ]
+        },
+        {
+            "name": "Contato",
+            "path": "/contato"
+        }
+    ],
+    "en-US": [
+        {
+            "name": "Home",
+            "path": "/"
+        },
+        {
+            "name": "About",
+            "path": "/about"
+        },
+        {
+            "name": "Services",
+            "path": "",
+            "children": [
+                {
+                    "name": "Production verification",
+                    "path": "/services/service1"
+                },
+                {
+                    "name": "Industrialization system verification",
+                    "path": "/services/service2"
+                },
+                {
+                    "name": "Investment project cost estimate analysis",
+                    "path": "/services/service3"
+                },
+                {
+                    "name": "Financial indicators verification",
+                    "path": "/services/service4"
+                },
+                {
+                    "name": "Supplier analysis",
+                    "path": "/services/service5"
+                },
+                {
+                    "name": "Initial project development analysis",
+                    "path": "/services/service6"
+                },
+                {
+                    "name": "Existing structures analysis regarding Profile engineering benefits",
+                    "path": "/services/service7"
+                }
+            ]
+        },
+        {
+            "name": "Contact",
+            "path": "/contact"
+        }
+    ]
+}
