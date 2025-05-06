@@ -14,7 +14,7 @@ const AboutSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/sobre/sobre.json");
+        const response = await fetch(import.meta.env.VITE_API_URL + "/sobre/sobre.json");
         const data = await response.json();
 
         if (!response.ok) {
